@@ -16,4 +16,7 @@ public class GameManager : MonoBehaviour
     void Restart(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    public void CompleteLevel(){
+        Debug.Log("Level 1");
+    }
 }
