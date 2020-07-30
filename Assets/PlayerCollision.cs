@@ -2,7 +2,12 @@
 
 public class PlayerCollision : MonoBehaviour
 {
-    void OnCollisionEnter(Collision other) {
-        Debug.Log("Hello");
+    public PlyerMovement playerMovement;
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.collider.tag == "Obstacle")
+        {
+            playerMovement.enabled = false;
+        }
     }
 }

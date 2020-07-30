@@ -3,7 +3,7 @@
 public class PlyerMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    public float forwardForce = 500f;
+    public float forwardForce = 1000f;
     public float horizontalForce = 500f;
 
     // Update is called once per frame
