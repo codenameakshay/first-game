@@ -16,11 +16,19 @@ public class PlyerMovement : MonoBehaviour
         }
         if (Input.GetKey("a"))
         {
-            rb.AddForce(-horizontalForce * Time.deltaTime, 0, 0,ForceMode.VelocityChange);
+            rb.AddForce(-horizontalForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
         if (Input.GetKey("w"))
         {
-            rb.AddForce(0, 2 * horizontalForce * Time.deltaTime, 0,ForceMode.VelocityChange);
+            rb.AddForce(0, horizontalForce * Time.deltaTime, 0, ForceMode.VelocityChange);
+        }
+        if (Input.GetKey("s"))
+        {
+            rb.AddForce(0, -horizontalForce * Time.deltaTime, 0, ForceMode.VelocityChange);
+        }
+        if (rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }
