@@ -562,6 +562,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 264416196}
+  cameraFX: {fileID: 894064421}
+  health: 3
 --- !u!1 &304790349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +1293,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 488a09939fff7484289ad283f768da4c, type: 3}
+--- !u!1 &894064421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5944095345234171262, guid: 488a09939fff7484289ad283f768da4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 894064420}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &951383523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1463,6 +1471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 264416194}
+  smoothSpeed: 10
   offset: {x: 0, y: 1, z: -5}
 --- !u!114 &963194230
 MonoBehaviour:
