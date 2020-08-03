@@ -5,6 +5,9 @@ public class GameManager : MonoBehaviour
     bool gameHasEnded = false;
     public GameObject completeLevelUI;
     public float restartTime;
+    void Start(){
+    Application.targetFrameRate = 120;
+    }
     public void EndGame()
     {
         if (gameHasEnded == false)

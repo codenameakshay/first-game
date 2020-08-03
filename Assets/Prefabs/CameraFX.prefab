@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5944095345234171260
 Transform:
@@ -46,5 +46,5 @@ MonoBehaviour:
   sharedProfile: {fileID: 11400000, guid: efc9e31ba829e4c409e3c0ea0ddd763a, type: 2}
   isGlobal: 1
   blendDistance: 0
-  weight: 1
+  weight: 0.515
   priority: 0
